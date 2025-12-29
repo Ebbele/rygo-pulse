@@ -1,0 +1,123 @@
+.stack-section {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.stack-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.stack-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* THE CARDS */
+.tech-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    overflow: hidden;
+    width: 180px;
+}
+
+.tech-card span {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+}
+
+/* ICON WRAPPER */
+.icon-wrapper {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-wrapper svg,
+.icon-wrapper img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.1));
+}
+
+/* INDIVIDUAL GLOW EFFECTS ON HOVER */
+.tech-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+
+/****************** GLOW you little shiny diamonds ****************************/
+
+/* React Glow (Atom-Blau) */
+.tech-card.react:hover {
+    box-shadow: 0 10px 40px -10px rgba(97, 218, 251, 0.4);
+    border-color: rgba(97, 218, 251, 0.5);
+}
+
+.tech-card.react:hover span {
+    color: var(--react-blue);
+    opacity: 1;
+}
+
+/* Rsbuild Glow (Krabben-Orange) */
+.tech-card.rsbuild:hover {
+    box-shadow: 0 10px 40px -10px rgba(255, 126, 51, 0.4);
+    border-color: rgba(255, 126, 51, 0.5);
+}
+
+.tech-card.rsbuild:hover span {
+    color: var(--rsbuild-orange);
+    opacity: 1;
+}
+
+/* GraphQL Glow (Fuchsia-Pink) */
+.tech-card.graphql:hover {
+    box-shadow: 0 10px 40px -10px rgba(225, 0, 152, 0.4);
+    border-color: rgba(225, 0, 152, 0.5);
+}
+
+.tech-card.graphql:hover span {
+    color: var(--gql-pink);
+    opacity: 1;
+}
+
+/* Go Glow (Gopher-Cyan) */
+.tech-card.golang:hover {
+    box-shadow: 0 10px 40px -10px rgba(0, 173, 216, 0.4);
+    border-color: rgba(0, 173, 216, 0.5);
+}
+
+.tech-card.golang:hover span {
+    color: var(--go-cyan);
+    opacity: 1;
+}
+
+/* gqlgen Glow (Clean White/Silver) */
+.tech-card.gqlgen:hover {
+    box-shadow: 0 10px 40px -10px rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.tech-card.gqlgen:hover span {
+    color: var(--gqlgen-white);
+    opacity: 1;
+}

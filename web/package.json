@@ -1,0 +1,32 @@
+{
+  "name": "rygo-pulse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A simple boilerplate project to get starting with graphQL ans SSE subscriptions.",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Tobias Ebbers",
+    "email": "tobias@ebbers.dev",
+    "url": "rygo-pulse.ebbers.dev"
+  },
+  "scripts": {
+    "build": "rsbuild build",
+    "dev": "rsbuild dev --open",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "@urql/core": "^6.0.1",
+    "graphql-sse": "^2.6.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "urql": "^5.0.1"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^1.6.14",
+    "@rsbuild/plugin-react": "^1.4.2",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  }
+}

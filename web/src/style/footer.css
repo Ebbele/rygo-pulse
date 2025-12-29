@@ -1,0 +1,62 @@
+
+.pulse-footer {
+  margin-top: 80px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Ein sehr feiner Trenner passend zum Rest der Seite */
+.footer-divider {
+  height: 1px;
+  width: 200px;
+  margin: 0 auto 30px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.footer-content {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-separator {
+  opacity: 0.3;
+}
+
+.footer-content a {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover-Effekt: Text wird weißer und bekommt einen dezenten Glow */
+.footer-content a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Subtiler Unterstrich beim Hovern */
+.footer-content a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(90deg, #4cc9f0, #b5179e);
+  transition: width 0.3s ease;
+}
+
+.footer-content a:hover::after {
+  width: 100%;
+}

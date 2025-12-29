@@ -18,6 +18,12 @@ Stop over-engineering with WebSockets for simple data streams. **Rygo-Pulse** le
 
 This boilerplate is meticulously crafted for **Developer Experience** and **Runtime Efficiency**.
 
+### ✨ See it in Action
+
+Check out the live deployment to experience the high-performance dashboard and real-time signals:
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-rygo--pulse.ebbers.dev-6366f1?style=for-the-badge&logo=vercel)](https://rygo-pulse.ebbers.dev)
+
 ---
 
 #### 💎 Highlights
